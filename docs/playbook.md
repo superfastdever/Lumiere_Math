@@ -239,3 +239,56 @@ Logic & Set Theory
 Optimization & Numerical Mathematics
 
 <!-- end Part 4 -->
+
+---
+
+## Part 5
+
+# ✅ Task Submission Checklist
+
+Pre-submit
+
+Run through this list before submitting every task.
+
+0 / 22 checked
+
+## Assay & Source
+
+-   Assay type and subtype match what's listed on the task — no scope drift.
+-   Source recorded correctly (Original — internal lab image, or URL/DOI for external).
+-   License is allowed (CC BY, CC BY-SA, CC0 only). No BioRender figures.
+-   External source is peer-reviewed and published.
+-   Image not previously used as the sole image in another task.
+
+## Image Quality
+
+-   Original resolution used — no screenshot-of-a-screenshot.
+-   On-image labels (axes, lanes, scale bars, legends) preserved, not cropped.
+-   No sharpening, enhancing, or color-correction beyond the original capture.
+-   Minimum image annotation — close to the real lab image, no significant overlays.
+-   If using multiple images/panels, each is numbered and referenced clearly.
+
+## Prompt
+
+-   Prompt is a question only — no answer options embedded.
+-   Prompt has a single, unambiguous Ground-Truth Final Answer (GTFA).
+-   If image is from a publication, answer CAN'T be found in that publication (no reverse-search shortcut).
+-   Prompt written without LLM assistance.
+
+## Model Responses
+
+-   2 out of 2 model responses MUST FAIL (final answer ≠ GTFA).
+-   Do NOT move forward with an easy prompt — strengthen your prompt if 2/2 models did not fail.
+
+## Answer Artifacts
+
+-   GTFA entered as a single value, word, short phrase, or algebraic expression.
+-   Image description written — modality, visible content, quality, and artifacts, detailed enough to understand the image without seeing it, and without revealing the GTFA.
+-   Model failure mode(s) selected and justified for each failed response.
+-   Step-by-step solution shows numbered expert reasoning from evidence to GTFA.
+-   5 distractors provided — plausible but verifiably wrong.
+-   Answer format and tolerance set (precision, sigfigs, rounding for numerics).
+
+Your progress is saved locally in your browser. Reset between tasks.
+
+<!-- end Part 5 -->
