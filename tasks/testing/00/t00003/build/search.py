@@ -89,18 +89,19 @@ def score(lines):
     return dict(lines=lines, pts=pts, mult=mult, prof=dict(sorted(prof.items())),
                 dmin=dmin, tri=sorted(tri)[:5], b2=b2)
 
-rng = random.Random(2024)
-best = []
-for _ in range(400000):
-    L = attempt(rng)
-    if not L: continue
-    s = score(L)
-    if s: best.append(s)
-best.sort(key=lambda s: (-s["dmin"], -len(s["tri"])))
-print(f"{len(best)} configurations found\n")
-for s in best[:4]:
-    print("lines:", s["lines"])
-    print(f"   profile {s['prof']}   b_2 = {s['b2']}   min point separation {s['dmin']:.3f}")
-    print(f"   near-miss triangles: " +
-          ", ".join(f"{d:.3f} on {t}" for d, t in s["tri"][:4]))
-    print()
+if __name__ == '__main__':
+    rng = random.Random(2024)
+    best = []
+    for _ in range(400000):
+        L = attempt(rng)
+        if not L: continue
+        s = score(L)
+        if s: best.append(s)
+    best.sort(key=lambda s: (-s["dmin"], -len(s["tri"])))
+    print(f"{len(best)} configurations found\n")
+    for s in best[:4]:
+        print("lines:", s["lines"])
+        print(f"   profile {s['prof']}   b_2 = {s['b2']}   min point separation {s['dmin']:.3f}")
+        print(f"   near-miss triangles: " +
+              ", ".join(f"{d:.3f} on {t}" for d, t in s["tri"][:4]))
+        print()
