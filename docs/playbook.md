@@ -1132,3 +1132,213 @@ Both models failed.
 If the model got the task right on the first attempt: redesign, swap the image, or retire — do not deliver as-is.
 
 <!-- end Part 12 -->
+
+---
+
+## Part 13
+
+> **NOTE ON FIDELITY:** the questions did not survive the paste. The page states
+> "30 questions across 7 sections", but only the answers (each marked "A")
+> arrived. Each answer's question must be inferred from its content.
+
+Lumiere Project
+
+# Reviewer FAQ
+
+30 questions across 7 sections. Use search or jump to a section below.
+
+[Prompt Quality](#section-1)[Image Requirements](#section-2)[Review Process](#section-3)[Specific Task Types](#section-4)[Model Failures and Justifications](#section-5)[Platform and Pay Issues](#section-6)[Getting Help](#section-7)
+
+Section 1
+
+## Prompt Quality
+
+A
+
+Yes, prompts should have at least 6 plausible answers to ensure the task is challenging enough for model evaluation. If a prompt has fewer (for example, "Which panel..." when there are only 3 panels), this is a major error. The prompt needs to be reworked to allow for more plausible options.
+
+A
+
+A stacked question asks for two or more separate questions in a prompt. These lead to compound answers. An example is "What is the name of this organism on plate 3 and how many colonies are there in plate 4?". The project only allows a single question that asks for a single unambiguous answer.
+
+A
+
+Not necessarily. Simple counting tasks are valid, provided they reflect something a scientist in the biosciences would actually do.
+
+A
+
+If the tasker acknowledges the counting is subjective (for example, "a conservative count gives 8, a liberal count gives higher"), the prompt likely cannot be fixed. Send it back with feedback explaining that the prompt must produce a single, unambiguous answer. If you're unsure, ask in the channel before returning.
+
+A
+
+Not necessarily a trick question — as long as the answer is technically correct and unambiguous. However, if the task seems designed to mislead rather than test genuine biological understanding, flag it for a lead's review.
+
+A
+
+If the correct answer is genuinely 0 (or another unexpected value) based on careful image analysis, that's valid. However, if the tasker is artificially adding misleading options just to trip up models, flag for review.
+
+Section 2
+
+## Image Requirements
+
+A
+
+Only JPEG (.jpg/.jpeg) and PNG (.png). Check the file extension ON THE PLATFORM (not by downloading — downloads can convert to .webp). If wrong format, send the task back.
+
+A
+
+There's no hard limit, but the image must be clear enough to analyze. If there are so many panels that they become indistinguishable, that's a quality issue.
+
+A
+
+If the source is CC BY or similar open license, minor modifications like adding a colored box to highlight a region or cropping out irrelevant panels are generally allowed. The key is whether the image still clearly shows what's needed to answer the prompt.
+
+A
+
+Generally no — tasks should use unique images. If you find duplicates, flag both task IDs in the channel. It's possible two fellows independently found the same paper, but we need to ensure uniqueness.
+
+A
+
+This is a major error. Send it back immediately with feedback about the mismatch. Provide feedback on any other issues you see in the other areas of the task such as prompt quality, step-by-step, and distractors. Be mindful of the time.
+
+A
+
+No. Gram-stain images belong in a different category. Send it back for category correction.
+
+A
+
+NO. PDFs are not allowed. The image must be uploaded as a standalone JPEG or PNG file.
+
+Section 3
+
+## Review Process
+
+A
+
+For your first review, pick any task and have a lead check it for alignment before submitting. After that, continue doing high quality reviews.
+
+A
+
+The step-by-step should explain the reasoning, not just list actions. A single sentence per step ("Step 1: Count the colonies") is NOT sufficient. Each step should explain WHY and HOW — enough that another scientist can follow the logic. If it's too brief, edit it yourself to add the reasoning.
+
+A
+
+If it's something you can fix (like a step-by-step wording issue), fix it yourself. If it's a major prompt error that the 1st reviewer should have caught, flag it for alignment discussion. A 2nd reviewer should never find NEW major errors unless the fellow introduced them while revising.
+
+A
+
+(1) Drop the task ID in the channel to get the fellow's name. (2) DM the fellow directly. (3) Have a conversation to reach alignment. Repeated returns usually mean our feedback isn't landing clearly — a quick chat often solves this.
+
+A
+
+This can happen if a previous reviewer started but didn't finish. You can proceed with your review — just note what's already been flagged and ensure everything is addressed.
+
+A
+
+This suggests ambiguity. If you carefully followed the prompt and got a different answer, the prompt likely needs to be more specific. Flag for discussion or return with feedback about the ambiguity.
+
+Section 4
+
+## Specific Task Types
+
+A
+
+No, but the visual difference must be clear enough that any reasonable observer would reach the same conclusion. If quantification requires software (like ImageJ), the task is likely too subjective.
+
+A
+
+The answer must be derivable from the IMAGE alone. If the prompt asks something visible in the assay, and the graph just confirms it, that's okay. But if you NEED the graph to answer, the task doesn't meet our criteria.
+
+A
+
+Yes, we accept them. If you do not have ImageJ to verify this, let a lead know.
+
+A
+
+Not necessarily. If a task is in "phage plaque morphology variants" but just asks for counting, check whether the image genuinely shows plaque morphology variants. If the image matches the subcategory even though the prompt is simple, it may be acceptable. If the image doesn't fit the subcategory, return it.
+
+Section 5
+
+## Model Failures and Justifications
+
+A
+
+NO. As long as there is meaningful content in the model failure justification, it's a pass. Don't be overly strict here.
+
+Section 6
+
+## Platform and Pay Issues
+
+A
+
+Check the payment tab on the platform. Time should accumulate as you review. If it's not tracking correctly, report it in the channel — leads can see everyone's time on the backend.
+
+A
+
+Yes, there have been tracking glitches. Report it in the channel with details (how many reviews you did vs. what's showing). No one is losing money — leads can verify your actual time worked.
+
+A
+
+Yes! Tasks submitted before your promotion will still be paid per task once they pass R1. There's no disruption to your existing task payments.
+
+Section 7
+
+## Getting Help
+
+A
+
+Drop the task ID in the reviewer channel and tag @Vanshika. She'll provide the fellow's name so you can DM them if needed.
+
+A
+
+Post in the channel with the task ID and a brief summary of your concern (for example, "Is this ambiguous?" or "Does this count as stacked?"). Include a link to the task for easier review.
+
+A
+
+The task may have already been claimed by someone else, or there may be a platform glitch. Check the claim sheet to see if someone else has their name on it. If not, report in the channel.
+
+Cheat sheet
+
+## Quick Reference: What To Do
+
+Situation
+
+Action
+
+-   Minor step-by-step wording is the only issue
+
+    → Fix it yourself and pass
+
+-   Multiple issues in the task
+
+    → Send back with all feedback
+
+-   Wrong supertype/subtype
+
+    → Send back immediately
+
+-   Wrong image format (not JPEG/PNG)
+
+    → Send back
+
+-   Stacked question (multiple independent answers)
+
+    → Send back — major error
+
+-   Fewer than 6 plausible answers
+
+    → Send back — major error
+
+-   Ambiguous answer
+
+    → Flag for discussion, likely send back
+
+-   Task stuck in review hell
+
+    → DM the fellow directly
+
+-   Need a fellow's name
+
+    → Tag @Vanshika with task ID
+
+<!-- end Part 13 -->
