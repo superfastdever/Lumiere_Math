@@ -1,4 +1,5 @@
 id,state,subdomain,failure_mode,gtfa,created,updated,notes
 t00001,retired,Discrete Mathematics & Combinatorics,connectivity / topology error,1248,2026-09-16,2026-09-16,Author judged it too simple to be worth a model run; never tested.
 t00002,retired,Geometry & Topology,connectivity / topology error; prior override,31,2026-09-16,2026-09-16,Author reports this data is already used in the project; retired unbuilt on arrival.
-t00003,testing,Geometry & Topology,geometric relation error; figure-based quantitative estimation,30,2026-09-16,2026-09-16,line arrangement; b_2 of complexified complement; awaiting model runs
+t00003,retired,Geometry & Topology,geometric relation error; figure-based quantitative estimation,30,2026-09-16,2026-09-16,"Calibration failure. Like t00001 and t00002 the item is 'read a structure, apply one formula': once Orlik-Solomon is known the mathematics is a single substitut"
+t00004,queue,Algebra,figure-based quantitative estimation; geometric relation error,13,2026-09-16,2026-09-16,"toric minimal resolution; derivation carries its own traps, not a single formula"
