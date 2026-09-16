@@ -986,3 +986,149 @@ This training document covers LaTeX formatting conventions for Handshake maths p
 [Open the LaTeX master guide](https://drive.google.com/file/d/1daMIGwq-EWTKUkeB0PXlKJvna0p8nv-B/view?usp=sharing)
 
 <!-- end Part 11 -->
+
+---
+
+## Part 12
+
+# 🔍 Reviewing Guidelines
+
+As a reviewer, you are responsible for maintaining the quality of the tasks that move through the pipeline. Use the knowledge you have as an expert and proficient tasker to identify issues in tasks and provide constructive feedback to fix them.
+
+## 📋 Claiming Reviews
+
+There is no reviewer claim sheet in this project. You can go to the Handshake AI dashboard → Project Lumiere → Available Tasks → set Stage to "Awaiting Review (Review 1)". This will show the tasks in the R1 layer that you can claim to review.
+
+## 📝 How to Give Feedback
+
+1.  Read through the task, then select the Add feedback icon on the relevant section and choose Major Issue, Minor Issue, Praise, or General Feedback.
+2.  Write constructive feedback — copy the relevant error from the Error Classifications below, point to where it occurs in the task, and suggest how to correct it.
+3.  If a minor error can be fixed in under 25 minutes and you're confident in the area, fix it yourself. Otherwise, send it back with feedback. When you fix a minor error to pass the task, leave a general comment noting what was corrected.
+4.  Provide praise on good tasks.
+5.  Select an appropriate quality score (1–5) for the task (see the rubric below).
+6.  To approve, the task must have no major or minor errors.
+
+![Feedback panel showing Major Issue, Minor Issue, Praise, and General Feedback options](https://project-lumiere-instructins.learn.joinhandshake.com/images/feedback-process.png)
+
+Selecting a feedback type on a task.
+
+## ⭐ Quality Score Rubric
+
+Every reviewed task receives a quality score from 1 to 5. A score of 3 or above is passing.
+
+Score
+
+Verdict
+
+Criteria
+
+5
+
+Pass — Excellent
+
+No major errors and no minor errors. Task is delivery-ready with no fixes required.
+
+4
+
+Pass — Good
+
+No major errors and 1–2 minor errors. Small corrections needed but the task is fundamentally sound.
+
+3
+
+Pass — Acceptable
+
+No major errors and 3–4 minor errors. Passing threshold; requires fixes before delivery.
+
+2
+
+Fail
+
+Contains a major error, OR more than 4 minor errors. Cannot pass — send back with feedback.
+
+1
+
+Fail — Flag
+
+No effort or 3+ major errors. Very rare — flag immediately to a team lead.
+
+## ⚠️ Error Classifications
+
+Click on the error tag to copy it and paste on the feedback.
+
+🚫
+
+### Major Errors
+
+-   Prompt has multiple correct answers
+-   Prompt is incorrect or not suitable (asking for something impossible or not valid)
+-   No or invalid image source for images extracted from online
+-   Incorrect final answer
+-   Final answer is not a single unambiguous answer
+-   Final answer is a long sentence
+-   Unclear image
+-   Incorrect image format (not PNG or JPEG)
+-   Heavily post-processed image (obvious color saturation due to editing or photographic manipulation)
+-   Invalid license type - This only applies for images obtained from online - DO NOT MARK MAJOR ERROR for user's own images.
+-   Invalid model failure
+-   Incorrect task subtype
+-   Not enough model failures
+-   Other
+
+⚠️
+
+### Minor Errors
+
+-   Model failure justification is incorrect or missing - Both general justification of multiple model failures or justification of a single model failure is accepted.
+-   Step-by-step solution has partial or incorrect steps
+-   Distractors are mismatched and do not align with the guidelines
+-   Answer format (integer, decimal, etc.) or the number of decimal places selected is inaccurate
+-   Poor grammar, spelling, or typos
+-   Other
+
+### 📌 Special Cases
+
+-   Typos and grammatical errors in the prompt — Only send back tasks for this issue if the errors alter the meaning of the prompt and can lead to incorrect answers, or if there are a significant number of typos and grammatical errors that make the prompt look very poor quality.
+-   Stacked questions — If a prompt asks multiple questions that require compounded answers, it is considered a stacked question and is not allowed (e.g., _"What is the antibiotic-resistant organism in the left plate, and what is the gram-positive bacterium in the middle plate?"_). A prompt must ask a single question with a single unambiguous answer. When in doubt, ask in the #lumiere-reviewer channel.
+
+## ✅ Submission Checklist
+
+0 / 18 checked
+
+Image is consistent with the assigned task Supertype and Subtype.
+
+Image is a PNG or a JPEG and not another image format.
+
+All images embedded at original resolution and labeled "Image 1:", "Image 2:", …
+
+On-image labels (axes, lanes, scale bars, ladders, legends) are preserved — not cropped.
+
+"License:" row is filled in for every external image with license type, source URL/DOI, and any required attribution.
+
+Original lab images marked as "Original — internal lab image".
+
+License is one of CC BY 4.0/3.0/2.0, CC BY-SA, or CC0. No CC BY-NC, CC BY-ND, CC BY-NC-ND, or All Rights Reserved.
+
+No BioRender figures (or other non-commercial creation tools).
+
+Source article is peer-reviewed and meets the current project date cutoff.
+
+Image has not been reused as the sole image in another task; if reused, it is combined with previously unused figures.
+
+Prompt is image-dependent — cannot be answered from the experiment type alone.
+
+Prompt is specific and unambiguous; conventions and options are spelled out.
+
+Step-by-step solution is numbered, anchored in visual evidence, names the biology, shows arithmetic, and closes with the GTFA.
+
+GTFA is written verbatim (not just a letter) and unambiguous in isolation.
+
+Five distractors, each plausible to a non-expert but dismissible by an expert.
+
+Both models failed.
+
+"Failure reason:" is filled in with a 1–3 sentence diagnosis of the model error.
+
+If the model got the task right on the first attempt: redesign, swap the image, or retire — do not deliver as-is.
+
+<!-- end Part 12 -->
