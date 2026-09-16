@@ -476,3 +476,92 @@ The description must be at least 200 words and carry enough detail that a reader
 Please note that the official cut-off date for published references is **December 31, 2025**. If any references are utilized within the golden solution, they must be cited in two places: the designated reference box and at the end of the golden solution itself.
 
 <!-- end Part 7 -->
+
+---
+
+## Part 8
+
+# ⚠️ Quality Bar & Common Pitfalls
+
+## 🎯 Hold the Bar — every task must satisfy:
+
+-   A peer in your field can answer the question from the image without seeing your solution.
+-   The step-by-step solution, read alone, justifies the GTFA from the image plus assay knowledge.
+-   Each distractor maps to a specific plausible error.
+-   The model fails, and you can name the failure mode in one sentence.
+
+## Common Pitfalls
+
+1
+
+### Writing the prompt as an explicit multiple-choice question
+
+Explicit multiple-choice prompts are disallowed. Do not present the responder with a list of terms, or a set of labelled images/panels, and ask them to pick one option. The prompt must ask for the answer directly, with a single canonical answer the responder has to derive from the image.
+
+2
+
+### Asking a stacked question
+
+A prompt must test one analysis. Do not bundle two different types of analysis into a single question — whether they are performed on the same image or across several images. If two distinct analyses are needed, split them into separate tasks.
+
+3
+
+### Writing a pure counting question
+
+Counting can be part of a task, but it cannot be the whole task. A prompt whose only demand is "how many X are visible" is disallowed — the count must feed a further judgement, classification, or quantitative conclusion the responder has to derive from the image.
+
+4
+
+### Mixing observation and interpretation in the early solution steps
+
+The opening steps should record what is visible. Keep interpretive claims out of them and place the reasoning in the later steps of the step-by-step solution.
+
+5
+
+### Prompts that can be answered from the image or figure type alone
+
+If a reader can answer your question without ever looking at the image, the prompt isn't image-dependent and isn't testing what we care about.
+
+6
+
+### Distractors an undergraduate would dismiss in five seconds
+
+Raise the floor on plausibility. Every distractor must be plausible to a non-expert and dismissable only by an expert. Anchor them to specific reasoning errors models actually make.
+
+7
+
+### Skipping the arithmetic in the step-by-step on quantitative tasks
+
+Show the dilution math, the per-corner average, the unit conversion. Reviewers and graders need to follow your numbers end-to-end.
+
+8
+
+### Delivering a task the model got right
+
+We are building an adversarial set; passing tasks are not the deliverable. If you cannot make it fail, redesign the prompt to target a tighter failure mode, swap in a harder image, or retire the task.
+
+9
+
+### External images that turn out to be license-restricted
+
+Licensing is the single most common reason a delivered task is rejected. Verify rights before authoring the task around the image. If you cannot find clear license info, treat it as All Rights Reserved and exclude.
+
+10
+
+### Using BioRender (or similar) figures
+
+Any figure created with BioRender — even inside a CC BY paper — is a hard reject. The same applies to other non-commercially licensed creation tools.
+
+11
+
+### Assuming open access means free to reuse
+
+Free reading access does not imply commercial reuse rights. Always verify the specific Creative Commons designation. Image license can also differ from paper license — check the figure caption.
+
+12
+
+### Cropping out on-image critical annotations
+
+Preserve all axis labels, lane labels, scale bars, color legends, and MW ladder markings. These are part of the visual reasoning the task tests.
+
+<!-- end Part 8 -->
