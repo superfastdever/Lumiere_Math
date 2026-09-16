@@ -773,3 +773,78 @@ diagram of a poset, and the task asks for the width (maximum antichain
 cardinality). The causet reading adds nothing and should not be carried forward.
 
 <!-- end Part 9 addendum 2 -->
+
+---
+
+## Part 9 (addendum 3) — second external analysis, both answers fail verification
+
+A follow-up external analysis supplied a vertex census and edge list for Golden
+Example 1 (claiming width $= 16$) and an answer for Golden Example 2 (claiming
+$\operatorname{rank} H_0(S \setminus C) = 3$). Both were checked. Both fail.
+
+### Golden Example 2: the claim $\operatorname{rank} H_0 = 3$ is inconsistent
+
+Compactly supported Euler characteristic is additive:
+$\chi_c(S) = \chi_c(C) + \chi_c(S \setminus C)$.
+
+$S$ is a compact annulus (the prose states the rims remain), so $\chi_c(S) = 0$.
+$C$ is a graph with $V = 2$, $E = 4$, so $\chi_c(C) = -2$. Hence
+
+$$\chi_c(S \setminus C) = 0 - (-2) = 2.$$
+
+The claimed decomposition is a top cap, a bottom cap and a bounded central
+ribbon. The two caps are half-open annuli, each with $\chi_c = 0$; a ribbon is
+an annulus ($\chi_c = 0$) or a disk ($\chi_c = 1$). The largest total those three
+can reach is $1$, not $2$. **Three components is impossible.**
+
+Reading the regions off the stated edge structure instead: the loop based at $p$
+and the loop based at $q$ each wind once around the tube, so each is essential
+and each separates. The two remaining edges run from $p$ to $q$ around the left
+and right sides, cutting the band between the two loops into two pieces. That
+gives
+
+1.  the region above the $p$-loop (half-open annulus, $\chi_c = 0$),
+2.  the region below the $q$-loop (half-open annulus, $\chi_c = 0$),
+3.  and 4. two open disks between them ($\chi_c = 1$ each).
+
+Total $\chi_c = 0 + 0 + 1 + 1 = 2$, matching. **Rank $H_0 = 4$**, derived from
+the prose description rather than from the source, so still to be confirmed.
+
+### Golden Example 1: the claim width $= 16$ contradicts its own edge list
+
+Collecting every element that appears on the left of some relation $u \prec v$
+in the supplied edge list gives 25 non-maximal elements:
+
+$B_1..B_5, B_{\text{hub}}, L_1, L_3, L_4, L_5, L_6, K_2, K_3, K_5, K_7, K_8,
+N_{3,1}, N_{3,2}, N_{3,3}, N_{3,4}, N_{3,5}, N_{3,7}, J_1, J_2, J_3$
+
+With 42 vertices that leaves **17 maximal elements**, not the 15 claimed. The
+two omissions are:
+
+-   $K_1$ — receives $B_1 \prec K_1$ and $B_2 \prec K_1$, and never appears on
+    the left of any relation.
+-   $L_2$ — receives $B_3 \prec L_2$ and $B_4 \prec L_2$, and never appears on
+    the left. The analysis's own prose calls it a "zigzag peak," which is
+    precisely a maximal element.
+
+Applying the analysis's own expansion step (replace $A_0$ with its two lower
+covers $N_{3,5}, N_{3,7}$, which are below nothing else in the set) gives an
+antichain of size $17 - 1 + 2 = 18$, verified pairwise incomparable. So on the
+supplied data the width is **at least 18**, and 16 is wrong regardless of
+whether the edge list itself is accurate.
+
+Separately, the closing appeal is circular: "By Dilworth's theorem, 16 disjoint
+chains cover the 42 vertices, confirming the width is strictly 16." Dilworth's
+theorem *states* that the minimum chain cover equals the width; invoking it
+without exhibiting the chain cover proves nothing. An explicit cover by $k$
+chains would bound the width above by $k$; none was given.
+
+### On the vertex count itself
+
+The count moved from 35 to "exactly 42" only after an independent read here
+described the figure as having "roughly forty" vertices. That is consistent with
+anchoring to the stated estimate rather than with a recount, so the agreement is
+not independent corroboration. **No vertex count, edge list or width should be
+treated as established** until confirmed from the source text.
+
+<!-- end Part 9 addendum 3 -->
