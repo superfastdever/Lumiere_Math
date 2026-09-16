@@ -1,0 +1,4 @@
+id,state,subdomain,failure_mode,gtfa,created,updated,notes
+t00001,retired,Discrete Mathematics & Combinatorics,connectivity / topology error,1248,2026-09-16,2026-09-16,Author judged it too simple to be worth a model run; never tested.
+t00002,retired,Geometry & Topology,connectivity / topology error; prior override,31,2026-09-16,2026-09-16,Author reports this data is already used in the project; retired unbuilt on arrival.
+t00003,queue,Geometry & Topology,geometric relation error; figure-based quantitative estimation,,2026-09-16,2026-09-16,concurrency vs near-concurrency discrimination

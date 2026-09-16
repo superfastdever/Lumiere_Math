@@ -1342,3 +1342,15 @@ Action
     → Tag @Vanshika with task ID
 
 <!-- end Part 13 -->
+
+---
+
+## Working notes: task store layout
+
+Tasks live under `tasks/`, one directory each, sharded two levels deep so no folder
+grows past a few hundred entries at ten thousand tasks. State is a folder:
+`queue`, `testing`, `passed`, `delivered`, `returned`, `retired`. `tasks/_index/`
+holds the registry (source of truth for state) and the fingerprint file used to refuse
+near-duplicates before any work is done. `tools/lm.py` moves tasks and rewrites the
+index in one step, and `lm.py check` runs the mechanically checkable parts of the
+22-item and 18-item checklists. See `tasks/README.md`.
