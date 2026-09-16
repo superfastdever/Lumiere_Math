@@ -958,3 +958,31 @@ Refreshers for the subject areas in scope.
 Reminder: BioRender figures are a hard block, and CC BY-NC / CC BY-ND material is never usable — regardless of where you found it.
 
 <!-- end Part 10 -->
+
+---
+
+## Part 11
+
+# 🧮 LaTeX & KaTeX Resources
+
+External references for writing and checking LaTeX in your tasks
+
+## KaTeX supported functions
+
+Use this reference to check which LaTeX commands are supported by KaTeX.
+
+[katex.org/docs/support\_table](https://katex.org/docs/support_table)
+
+## Verify LaTeX rendering
+
+Use this to write and verify your LaTeX renders correctly before submitting.
+
+[stackedit.io](http://stackedit.io/)
+
+## Handshake LaTeX master guide
+
+This training document covers LaTeX formatting conventions for Handshake maths projects — inline and display math modes, fractions, matrices, align environments, spacing, punctuation, and more.
+
+[Open the LaTeX master guide](https://drive.google.com/file/d/1daMIGwq-EWTKUkeB0PXlKJvna0p8nv-B/view?usp=sharing)
+
+<!-- end Part 11 -->
