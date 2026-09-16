@@ -644,3 +644,69 @@ Bad / good example pair:
 -   Both images were not attached.
 
 <!-- end Part 9 -->
+
+---
+
+## Part 9 (addendum) — images received, gaps partially closed
+
+Three of the four Part 9 images were attached directly to the conversation
+(the network egress proxy blocks the source host, so they could not be
+fetched). Recorded below is what could be read off them.
+
+### Bad / good example pair — GAPS NOW CLOSED
+
+Both prompts are fully legible in the attached screenshot:
+
+-   **Bad:** "Let $y = f(x)$ be the graph of the red curve in the image that
+    passes through the points $A, B, C$. What is $f(4)$?"
+    Figure: a red upward-opening curve on a plain grid. No axis labels, no tick
+    marks, no marked origin. Points $A$ (upper left, on the curve), $B$ (at the
+    minimum) and $C$ (upper right, on the curve) are lettered but not drawn as
+    dots, and their coordinates are not pinned down.
+-   **Good:** "Let $y = f(x)$ be the graph of the red parabola in the image that
+    passes through the points $A, B, C$. The coordinates of these points are
+    integers. What is $f(4)$?"
+    Same curve, but the axes are labelled $x$ and $y$, the origin is labelled
+    $O$, unit tick marks labelled $1$ appear on both axes, and $A$, $B$, $C$ are
+    drawn as filled dots on the curve.
+-   Caption: "The fix: the good version names the curve type and pins the points
+    to integer coordinates, so the answer is unique."
+
+### Golden Example 2 (hourglass surface) — PARTIALLY CLOSED
+
+Legible from the image: the surface is labelled $S$ (upper right), the closed
+red curve is labelled $C$ (lower front), and the vertical axis is labelled $z$
+(arrowhead at top, drawn through the interior and protruding below). The
+surface is a light-blue hyperboloid-like hourglass, uncapped at both ends — the
+inner wall is visible through the top rim. Solid red arcs run on the visible
+front, dashed red arcs on the hidden back. Two transverse self-intersections are
+visible: an upper solid-solid crossing on the front, and a lower dashed-dashed
+crossing on the back. This matches the prose description, which also fixes the
+stripped vertex count: the curve is a connected graph with **2 vertices** and
+four edges (the two crossing points, each with four incident branches).
+
+Still missing: the two symbols used for the crossing points, and the GTFA.
+
+### Golden Example 1 (Hasse diagram) — STILL OPEN
+
+The image carries **no labels at all**: it is bare black vertices joined by blue
+segments. The element names described in the prose ("the letters label the rows
+from bottom to top, and subscripts increase from left to right") are assigned by
+the description, not drawn on the figure. The relation list therefore cannot be
+recovered from the image — it was prose, and it is gone.
+
+Structural read of the figure, offered with explicit low confidence on the
+counts: roughly six horizontal levels, on the order of forty vertices, densely
+connected, with edges that frequently cross between levels. One vertex on the
+bottom level has a conspicuous fan of several edges running up and to the right.
+At the bottom right there are **exactly two vertices with no incident edges** —
+this corroborates the prose sentence "In particular, and are isolated."
+
+Reading the exact adjacency of this figure by eye is not reliable, and no
+adjacency list is asserted here. That difficulty is the point of the example:
+it targets the connectivity/topology failure mode listed first in Part 7.
+
+Still missing: the element naming scheme, the full relation list, and the GTFA
+(the width of the poset).
+
+<!-- end Part 9 addendum -->
