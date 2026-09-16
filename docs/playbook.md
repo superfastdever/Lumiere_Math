@@ -710,3 +710,66 @@ Still missing: the element naming scheme, the full relation list, and the GTFA
 (the width of the poset).
 
 <!-- end Part 9 addendum -->
+
+---
+
+## Part 9 (addendum 2) — third-party image analysis, assessed
+
+The user supplied an external analysis of the three Part 9 images (produced by
+another model). Assessed claim by claim below. Recorded because one gap is
+closed by it and because two of its claims should NOT be carried forward.
+
+### Bad / good pair — accepted, GTFA recovered
+
+Coordinates read as $A(-2, 1)$, $B(0, -1)$, $C(2, 1)$. These are mutually
+consistent (symmetric about the $y$-axis, vertex on the axis) and agree with the
+figure as far as it can be read. Deriving:
+
+Vertex at $B(0,-1)$ gives $f(x) = ax^2 - 1$. Substituting $C(2,1)$:
+$1 = 4a - 1 \implies a = \tfrac{1}{2}$, so $f(x) = \tfrac{1}{2}x^2 - 1$ and
+$f(4) = \tfrac{1}{2}(16) - 1 = 7$.
+
+**GTFA for the "good" example: $f(4) = 7$.** Arithmetic verified. Caveat: this
+rests on coordinates read off the plot, not on source text.
+
+### Golden Example 2 — REJECTED as a description of this task
+
+The external analysis frames the figure as "a geodesic on a surface of
+revolution" and develops Clairaut's relation $r(z)\sin\alpha(z) = $ const,
+turning points and caustics, concluding the curve "oscillates indefinitely
+between two parallel latitudes." Three problems:
+
+1.  **It misses a self-intersection.** It reports the curve "intersecting itself
+    on the front face" — one crossing. The playbook prose states there are
+    exactly two genuine transverse self-intersections: an upper solid-solid
+    crossing on the front AND a lower dashed-dashed crossing on the back. The
+    second is what makes the curve a graph with 2 vertices and 4 edges.
+2.  **"Oscillates indefinitely" contradicts the source.** The prose says "a
+    single closed red curve." A closed curve does not oscillate indefinitely.
+3.  **The geodesic framing is imported, not observed.** Nothing in the task
+    concerns geodesics. The question asks for the rank of $H_0$ of the
+    complement $S \setminus C$ — a question about how many pieces the curve cuts
+    the annulus into. Clairaut's relation has no bearing on it.
+
+This is an instance of the "unextracted given / prior override" failure mode
+catalogued in Part 7: the figure resembles a standard textbook geodesic
+illustration, and the analysis answered about the remembered figure rather than
+the one shown. Useful as a specimen; not usable as a description.
+
+### Golden Example 1 — unresolved disagreement on the vertex count
+
+The external analysis states 35 vertices across roughly six tiers. An
+independent read of the same figure gave roughly forty. Neither count is
+verified, and they disagree. **No vertex count should be relied on** until it is
+confirmed from the source text.
+
+Agreed points: roughly six tiers; no horizontal intra-level edges; a bottom-tier
+vertex emitting a fan (external analysis says four edges) up and to the right;
+exactly two isolated degree-zero vertices at the bottom right.
+
+The analysis additionally frames the figure as a causal set from discrete
+spacetime physics. This is speculation: the playbook identifies it as a Hasse
+diagram of a poset, and the task asks for the width (maximum antichain
+cardinality). The causet reading adds nothing and should not be carried forward.
+
+<!-- end Part 9 addendum 2 -->
