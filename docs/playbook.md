@@ -383,3 +383,96 @@ The second attached screenshot shows the same figure inside its "Examples of
 invalid prompts" panel on the source page; it carries no additional content.
 
 <!-- end Part 6 -->
+
+---
+
+## Part 7
+
+# ✍️ Writing the Prompt
+
+A good prompt is a question that an expert can answer confidently from the image and that a strong vision-language model gets wrong, with a clear chain of reasoning available to the human grader.
+
+-   **Image-dependent.** The question must require reading the image. If it can be answered from the text of the prompt alone, it is not appropriate.
+-   **Specific and unambiguous.** Spell out conventions (e.g. "state the answer to 3 significant figures", "count only items fully inside the marked region"). For prompts that require reading/estimating values off of a graph, you must specify the rounding convention (e.g. "for values read off of the graph, round up to the nearest tick mark")
+-   **Expert-grade.** Require mathematical domain knowledge at undergraduate level or above.
+-   **Single canonical answer.** The prompt should have a single verifiable answer that any expert in the field would be able to arrive to. Avoid open-ended questions.
+
+When choosing what to ask, deliberately target reasoning patterns models struggle with:
+
+The first five below are the most common in Maths.
+
+Connectivity / topology errorMost common in Maths
+
+Misreads what connects to what, or how elements are configured: wrong vertex adjacency in a graph, misread order relations in a Hasse diagram, how a curve wraps around a surface.
+
+Geometric relation errorMost common in Maths
+
+Misreads configuration in figures: parallelism, perpendicularity, tangency, collinearity, inside vs outside a region, occluded edges in 3D projections.
+
+Data extraction errorMost common in Maths
+
+Wrong information pulled from a chart: wrong series mapped to the legend, bar height misjudged, wrong interpolation between gridlines. Reports the blue curve's peak when asked about the dashed one.
+
+Figure-based quantitative estimation errorMost common in Maths
+
+Errors counting or measuring off the image: grid squares, lattice points, spectral peaks; also treating a "not to scale" schematic as measurable.
+
+Label-element or axis mis-bindingMost common in Maths
+
+Reads every label correctly but attaches it to the wrong object.
+
+Scale and unit misread
+
+Misinterprets the plot frame: log vs linear, tick spacing, non-zero origin, secondary y-axis, axis units, scale bar.
+
+Direction and sign-convention error
+
+Misreads arrows and orientation: force or field direction, coordinate handedness, clockwise vs counterclockwise, slope field direction.
+
+Unextracted given / prior override
+
+The figure carries a value or condition available nowhere else and the model omits it, substitutes a plausible number, or answers about a canonical textbook figure it assumed instead of the one shown.
+
+Prompt length is limited to 2000 characters.
+
+The model's knowledge cutoff is December 31st 2025. Do not submit prompts that require knowledge past this date.
+
+A prompt that depends on information published after this date will fail because the model has not seen it, not because it misread the image/makes a reasoning error — which is not the failure mode this project collects.
+
+The step-by-step is the bridge between the image and the GTFA. A grader should be able to follow it without re-deriving the mathematics from scratch.
+
+-   **Number steps.** Use _Step 1, Step 2, …_ (or 1), 2), …) — be consistent within a task.
+-   **Start from the image.** The first one or two steps should anchor the answer in concrete visual evidence ("Note which vertices are joined by an edge, and which rows the labels sit in", "Read the coordinates of the marked points off the gridlines").
+-   **Bring in the mathematics explicitly.** Name the theorem, definition or convention the step depends on.
+-   **Show the working.** Write out the substitutions and intermediate values, not just the result.
+-   **Close with the answer.** The final step should resolve to the GTFA verbatim.
+
+Write the answer as it should appear if the model produced a verbatim correct response. An acceptable GTFA is a number, word, short phrase, or ordered/unordered list. **GTFA should never be a long sentence that can be written in multiple ways** — this is a sign of an open ended question.
+
+Examples
+
+-   A short ordered list of values
+
+The description must be at least 200 words and carry enough detail that a reader could derive the final answer from the prompt and the description alone, without seeing the image. Describe what is there — do not state the final answer itself.
+
+-   **Modality.** State what the figure is and how it was produced — for example a plotted function, a Hasse diagram, a knot projection, a 3D surface render — plus the panel layout where relevant.
+-   **Content.** Describe what is visible in the field: structures, shapes, arrangement, and how panels relate to each other.
+-   **Quality.** Comment on resolution, line weight, label legibility, and whether anything in the figure is cropped or obscured.
+-   **Artifacts.** Note anything that could be mistaken for meaningful content — rendering artefacts, overlapping labels, aliasing on curves, or gridlines that could be read as data.
+-   **Annotations.** State explicitly whether labels, arrows, numbers, scale bars, or captions are present.
+-   **Do not give away the answer.** The description must not state or imply the GTFA.
+
+-   Provide **five distractors**.
+-   None of the distractors can be the GTFA.
+-   Each distractor must be unique (i.e. do not duplicate any of the distractors).
+-   Every distractor should be **plausible to a non-expert and dismissable by an expert**. Distractors that are obviously wrong waste a slot and lower the difficulty.
+-   Lean on common reasoning errors: axis flips, miscounts off by one bin, plausible-sounding alternative explanations that fail on a specific detail.
+-   Anchor distractors to errors models tend to make. If you've already seen a model fail in a related task, mine that failure for distractor ideas.
+
+⚠️ Required note above the distractor list
+
+"Distractors (incorrect answers only). Note that in testing we provided the model all potential answers, including the GTFA."
+
+Please note that the official cut-off date for published references is **December 31, 2025**. If any references are utilized within the golden solution, they must be cited in two places: the designated reference box and at the end of the golden solution itself.
+
+<!-- end Part 7 -->
