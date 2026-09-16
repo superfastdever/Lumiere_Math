@@ -848,3 +848,113 @@ not independent corroboration. **No vertex count, edge list or width should be
 treated as established** until confirmed from the source text.
 
 <!-- end Part 9 addendum 3 -->
+
+---
+
+## Part 10
+
+# 📚 Helpful Resources
+
+Last updated: Sep 2, 2026 · External references for sourcing images and authoring tasks
+
+These are optional aids, not a substitute for the playbook. Your own lab images remain the strongly preferred source — use the links below when you need a license-clean external image or a quick refresher on nomenclature, grading criteria, or occupation codes.
+
+## Open image repositories
+
+Searchable sources of license-clean laboratory and clinical imagery.
+
+-   [BioImage Archive (EMBL-EBI)](https://beta.bioimagearchive.org/bioimage-archive/)
+
+    Deposited biological imaging datasets; check each study's license.
+
+-   [Figshare](https://figshare.com/)
+
+    General research data repository; filter for CC BY / CC0 items.
+
+-   [Harvard Dataverse](https://dataverse.harvard.edu/)
+
+    Datasets with per-deposit licensing; confirm terms before use.
+
+-   [Image Data Resource (IDR)](https://idr.openmicroscopy.org/)
+
+    Published microscopy screens and imaging studies.
+
+-   [PIDAR datasets (HPC4AI, Torino)](https://pidar.hpc4ai.unito.it/Datasets/Index)
+
+    Pathology image datasets index.
+
+-   [Kaggle: chromosome image dataset (karyotype)](https://www.kaggle.com/datasets/aliabedimadiseh/chromosome-image-dataset-karyotype)
+
+    Karyotype images for cytogenetics tasks; verify the dataset license.
+
+-   [NIH Open-i](https://openi.nlm.nih.gov/)
+
+    Biomedical figures from PubMed Central; filter by license.
+
+-   [PubMed Central (Open Access subset)](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/)
+
+    Peer-reviewed articles with CC BY / CC0 figures.
+
+-   [Wikimedia Commons](https://commons.wikimedia.org/)
+
+    Check the per-file license — many are CC BY-SA or CC0.
+
+-   [The Cancer Imaging Archive (TCIA)](https://www.cancerimagingarchive.net/)
+
+    De-identified pathology and radiology collections.
+
+## Open Access Journals
+
+Figures from open-access articles — always check the per-article license before use.
+
+-   [PLoS](https://plos.org/)
+
+    Most content is CC BY.
+
+-   [Frontiers](https://www.frontiersin.org/)
+
+    Open-access articles across life sciences.
+
+-   [MDPI](https://www.mdpi.com/)
+
+    Open-access journals; confirm the license line on each article.
+
+-   [eLife](https://elifesciences.org/)
+
+    Life-science research, typically CC BY.
+
+-   [Nature (open access)](https://www.nature.com/openresearch/publishing-with-npj/)
+
+    Only the open-access articles; subscription content is not usable.
+
+## Licensing references
+
+Use these to confirm an image is usable before building a task around it.
+
+-   [Creative Commons license chooser & summaries](https://creativecommons.org/share-your-work/cclicenses/)
+
+    What each CC license permits. NC and ND are not usable.
+
+-   [CC0 public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+
+    Always acceptable; still record the source URL.
+
+## Domain background
+
+Refreshers for the subject areas in scope.
+
+-   [O\*NET OnLine occupation search](https://www.onetonline.org/)
+
+    Look up the exact occupation title and SOC code for the Profession field.
+
+-   [ISCN karyotype nomenclature overview](https://en.wikipedia.org/wiki/International_System_for_Human_Cytogenomic_Nomenclature)
+
+    Standard notation for cytogenetics answers.
+
+-   [WHO / CAP grading & staging criteria](https://www.cap.org/protocols-and-guidelines)
+
+    Use published criteria when a prompt asks for a graded call.
+
+Reminder: BioRender figures are a hard block, and CC BY-NC / CC BY-ND material is never usable — regardless of where you found it.
+
+<!-- end Part 10 -->
