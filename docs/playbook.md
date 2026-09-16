@@ -292,3 +292,94 @@ Run through this list before submitting every task.
 Your progress is saved locally in your browser. Reset between tasks.
 
 <!-- end Part 5 -->
+
+---
+
+## Part 6
+
+# 🖼️ Images to Use
+
+What makes a good image for the Multimodal Task
+
+The image is the foundation of every task. A great prompt with a weak image fails; a good image makes adversarial, expert-grade questions possible. Use this page to decide whether an image is worth building a task around.
+
+-   The maximum number of images that can be used per task is 5.
+-   When adding multiple images, the numbering/naming scheme of the images MUST match how you refer to them in the prompt.
+-   Images must be JPEG or PNG format.
+-   Make sure that the image is at a resolution that allows a HUMAN reviewer to obtain the correct answer. Do not use screenshots when you are in Dark Mode making text difficult to read (particularly colored text).
+
+## Image Requirements
+
+-   **Mathematical images only.** Images must be mathematical images of the kind that appear in maths literature, not general images: graphs, Hasse diagrams, Kripke structures, curves, surfaces, manifolds, knots and links, statistical plots. Common tools: Desmos, GeoGebra, Graphviz.
+-   **High quality only.** No blurry photos, poor screenshots, low-resolution copies, or bad hand-drawn images.
+-   **Crop tightly.** Use only the part of the figure you need, not a whole paper or chapter.
+-   **Format.** Only jpg and png are allowed.
+-   **No transparency.** A png must not have a transparent background. Convert to jpg if it does.
+-   **One task per image.** Each image may be used in only one task. Cropping, resizing, recolouring, relabelling or redrawing the same underlying figure does not make it a new image. You can attach up to 5 images to a prompt.
+-   **Not OCR.** The model failure must come from the rich visual content of the image, not from OCR. Do not use an image that is only a text block, formula, matrix or simple table.
+
+## Examples of invalid prompts
+
+![Four invalid math multimodal prompt examples](https://project-lumiere-instructins.learn.joinhandshake.com/images/math-invalid-examples.png)
+
+Four failure reasons illustrated here: the image is OCR-only, the image is just a table of data, the image is blurry, and the image is not necessary to answer the prompt.
+
+## Where the image should come from
+
+★ Top priority
+
+✅
+
+### Strongly preferred: figures you create yourself
+
+**Figures you build yourself** — plots, diagrams, graphs, and geometric constructions made for a problem you designed — are the single best source. They're original, license-clean, and rich with adversarial potential. Record as _"Original — self-authored figure"_ and type N/A for URL/DOI and license.
+
+✏️
+
+**Annotation rule:** what we exclude are _artificial digital annotations_ — arrows, circles, boxes, text callouts, or highlighting added to the image after capture. Native on-image elements produced by the instrument or the preparation itself are permitted and can be preserved.
+
+🟡 Acceptable
+
+Open scientific sources with a clear commercial-reuse license: **CC BY 4.0/3.0/2.0**, **CC BY-SA**, or **CC0**. Source must be peer-reviewed and published.
+
+🚫 Prohibited
+
+No clear license, CC BY-NC, CC BY-ND, paywalled material without permission, and **any BioRender figure** (hard block).
+
+### Image quality standards
+
+-   Use original resolution. Avoid screenshots of screenshots. Only PNG and JPEG are allowed.
+-   Preserve all on-image labels (axis labels, lane labels, scale bars, color legends). Do not crop them out.
+-   Do not enhance, sharpen, or color-correct beyond what was applied in the original capture. Real artifacts are part of the signal we want to test.
+-   Avoid images with transparent backgrounds.New
+
+## License quick reference
+
+| Source / License | Allowed? | Notes |
+| --- | --- | --- |
+| Original — self-authored figure | Yes | Strongly preferred. Figures, plots, and constructions you made yourself are ideal. |
+| CC BY 2.0/3.0/4.0 | Yes | Free to use, share with attribution. Do not modify the image itself. |
+| CC BY-SA | Yes | Free to use; derivatives must use the same license. |
+| CC0 | Yes | Public domain. |
+| CC BY-NC / -ND / -NC-ND | No | Non-commercial or no-derivatives restrictions — not usable. |
+| All Rights Reserved | No | Default when no license is stated. Exclude. |
+| BioRender-generated figures | No | Hard block, even if the surrounding paper is CC BY. |
+
+**Note:** You may use images that you personally created for a research paper. In these instances, the image is classified as original and is approved for prompt creation.
+
+### Transcription of the attached "Examples of invalid prompts" figure
+
+(My reading of the image supplied with Part 6. Four panels, each an image +
+prompt + reason it is invalid. Flagged as a transcription, not source text.)
+
+| # | Image content | Prompt | Invalid because |
+| --- | --- | --- | --- |
+| 1 | The typeset equation $x^4 - 2x^2 + 1 = 0$, nothing else | "Find the real roots of the equation in the attached image." | OCR |
+| 2 | Two-row table — $x$: 0, 1, 2, 3 and $f(x)$: 1, 2, 4, 8 | "Calculate the value of $f(4)$ based on the table in the attached image." | Table of data |
+| 3 | A low-resolution red parabola on a grey grid, vertex near $(0,-2)$ | "Find the equation of the red parabola in the attached image." | Blurry image |
+| 4 | Right triangle $ABC$, right angle at $A$, drawn unlabelled apart from vertex letters | "The image shows a right triangle $ABC$ such that $\angle A = 90^\circ$, $AB = 3$ and $BC = 5$. What is the area of the triangle?" | Image is not necessary |
+
+The second attached screenshot shows the same figure inside its "Examples of
+invalid prompts" panel on the source page; it carries no additional content.
+
+<!-- end Part 6 -->
