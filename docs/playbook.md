@@ -106,3 +106,119 @@ Everywhere else, the pipeline moves forward on its own. The goal of every checkl
 > Our working result should pass this kind of stressful workflow. So you should understand how quality is importnat. It's not what you're doing. Our working result will pass them. So you should be prepared and worked very professionally in PhD or higher level so that make our working result pass them perfectly.
 
 <!-- end Part 2 -->
+
+---
+
+## Part 3
+
+# ✨ Multimodal Task — Overview
+
+Active
+
+Mathematics Multimodal Task Authoring Guide
+
+## Purpose & Scope
+
+Author multimodal mathematics tasks that pair an image — a figure, plot, diagram, or geometric construction — with an expert-level prompt that a frontier vision-language model is expected to **get wrong**. The goal is to grow a high-quality, adversarial evaluation set that exposes specific failure modes in the visual interpretation and mathematical reasoning of figures.
+
+📸
+
+Feel free to use your own images of failed assays and subpar assay images — these are encouraged!!!
+
+-   The prompt must be relevant to one of the listed subjects and specific enough to have a single unambiguous answer.
+-   Aim for minimal annotations in the images.
+-   There is an image limit of 5 total images for each task.
+
+## Task Rules
+
+-   **Unique final answer.** The task must have a unique final answer. It can be any valid mathematical object — a number, group, space, set, equation. "DNE" is not acceptable. Empty sets are allowed. Equivalent representations are all acceptable, but the most simplified form is preferred.
+-   **Self-contained final answer.** Every variable in it must be defined in the final answer itself or in the prompt, never only in the step-by-step solution.
+-   **Length.** The final answer must be under 100 rendered LaTeX characters.
+-   **Prompt length.** The prompt must be under 2000 rendered LaTeX characters.
+-   **Use LaTeX for everything.** It must render on our platform, Overleaf or StackEdit. Prefer `$ $` and `$$ $$` delimiters. See the [HAI LaTeX Guide](https://drive.google.com/file/d/1daMIGwq-EWTKUkeB0PXlKJvna0p8nv-B/view?usp=sharing).
+-   **Level.** Undergraduate maths/engineering up to graduate or research level. Too-niche topics take longer to review. High-school-level tasks are not acceptable.
+-   **Requires genuine reasoning.** The task should not be solvable by solely general knowledge, for example, the number of vertices of a graph with odd degree.
+-   **No ambiguity.** No ambiguous prompts or images. The task must have one final answer that every knowledgeable mathematician would agree on.
+-   **No stacked tasks.** One single mathematical scenario. The difficulty must come from an atomic inquiry about a rich image, not from interweaving several scenarios or asking a multi-layered question about a simple image.
+-   **Verifiable by hand.** A knowledgeable PhD scholar should be able to verify the task with pen, paper and a basic non-graphing calculator in about an hour. Avoid tasks that need external programming.
+-   **No trick questions.** Nothing deliberately deceptive through misleading language, irrelevant information or unconventional structure. Do not use mathematical terminology in nonstandard ways.
+-   **Zero tolerance for near-duplicate tasks.** Questions differing only in numbers will be returned.
+-   **Numbered solution.** Number the step-by-step solution as Step 1, Step 2, and so on, and put the final answer on the last line. Step-by-step solution must have at least 3 reasoning steps.
+-   **Not guessable.** The set of naively possible answers needs at least 10 elements. Yes/No and True/False are not allowed.
+-   **Numerical approximations.** If the final answer is a numerical approximation, the prompt must specify the format — decimal places or significant figures.
+-   **No method steering.** Never tell the model to use or avoid a specific method.
+
+## How your task is tested
+
+-   Both on-platform models must produce an incorrect final answer.
+-   The failure must be caused by image extraction or interpretation — not OCR.
+-   After submission the task is run against more iterations of the model, and may be sent back if it does not break enough of them.
+
+🔬
+
+### Realism
+
+Images are real, not idealized, and may contain artifacts, contamination, or failure modes that an experienced engineer would recognize. **Use realistic (though simplified) engineering diagrams, and avoid artificial digital annotations added to guide interpretation, such as arrows, circles, boxes, or highlights. Things like dimension labeling are fine.**
+
+⚔️
+
+### Adversariality
+
+Author tasks that probe specific reasoning weaknesses: axis confusion, magnification mismatches, signal-vs-artifact discrimination, and over-reliance on textual cues over visual evidence.
+
+✏️
+
+**Annotation rule:** what we exclude are _artificial digital annotations_ — arrows, circles, boxes, text callouts, or highlighting added to the image after capture. Native on-image elements produced by the instrument or the preparation itself are permitted and can be preserved.
+
+## Subdomains in Scope
+
+Note: A single whole-slide-image field (one FOV exported from the WSI viewer) is permitted; a full gigapixel whole-slide image is not.
+
+Core workflow
+
+## Task Structure
+
+Step-by-step
+
+Step 1 of 12
+
+### Start
+
+Begin the task. Review the brief and start the timer.
+
+![Task intro & timer](https://project-lumiere-instructins.learn.joinhandshake.com/images/task-flow/step-01.png)
+
+Task intro & timer
+
+## Choosing the Image
+
+✅ Preferred
+
+Self-authored engineering diagrams (beam diagrams, flow networks, circuit diagrams, road networks, etc.) you have generated.
+
+🟡 Acceptable
+
+Open source images with a clear commercial-reuse license: **CC BY 4.0/3.0/2.0**, **CC BY-SA**, or **CC0**.
+
+🚫 Prohibited
+
+No clear license, CC BY-NC, CC BY-ND, paywalled material without permission.
+
+### Image Quality Standards
+
+-   Use original resolution. Avoid screenshots of screenshots. Only PNG and JPEG are allowed.
+-   Preserve all on-image labels (axis labels, lane labels, scale bars, color legends). Do not crop them out.
+-   Do not enhance, sharpen, or color-correct beyond what was applied in the original capture. Real artifacts are part of the signal we want to test.
+
+## License Quick Reference
+
+| License | Allowed? | Notes |
+| --- | --- | --- |
+| CC BY 2.0/3.0/4.0 | Yes | Free to use, share with attribution. Do not modify the image itself. |
+| CC BY-SA | Yes | Free to use; derivatives must use the same license. |
+| CC0 | Yes | Public domain. |
+| CC BY-NC / -ND / -NC-ND | No | Non-commercial or no-derivatives restrictions — not usable. |
+| All Rights Reserved | No | Default when no license is stated. Exclude. |
+| BioRender-generated figures | No | Hard block, even if the surrounding paper is CC BY. |
+
+<!-- end Part 3 -->
