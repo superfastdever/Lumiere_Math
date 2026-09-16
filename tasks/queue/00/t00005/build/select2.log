@@ -1,0 +1,8 @@
+  candidate 1: min smooth radius   16.4 px   coeffs [0, 1, 5, -3, 1]
+  candidate 2: min smooth radius   73.5 px   coeffs [-3, 0, 4, -3, -1]
+  candidate 4: min smooth radius   98.6 px   coeffs [-3, 0, 0, -2, 1]
+  candidate 8: min smooth radius  117.3 px   coeffs [5, -4, 3, -5, 4]
+  candidate 75: min smooth radius  118.0 px   coeffs [2, 4, 2, 3, -2]
+  candidate 79: min smooth radius  119.3 px   coeffs [2, 1, -2, 4, -3]
+  candidate 103: min smooth radius  141.5 px   coeffs [2, -2, 5, -2, 3]
+  candidate 191: min smooth radius  144.7 px   coeffs [0, 2, -5, 2, -3]

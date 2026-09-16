@@ -3,3 +3,4 @@ t00001	Discrete Mathematics & Combinatorics	graph drawing	number of spanning tre
 t00002	Geometry & Topology	knot diagram	knot determinant	54f1a0855816	Author reports this data is already used in the project; retired unbuilt on arri
 t00003	Geometry & Topology	real line arrangement in the plane	second Betti number of the complexified complement	16c27b1ae961	concurrency vs near-concurrency discrimination
 t00004	Algebra	complete fan in a rank two lattice	number of exceptional divisors in the minimal resolution	1e645ee6f139	toric surface singularities, Hirzebruch-Jung; derivation has its own traps beyond the reading
+t00006	Algebra	Auslander-Reiten quiver	dim End of a module	f8bb3ec955e2	E6 path algebra
