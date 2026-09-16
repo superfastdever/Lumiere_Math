@@ -222,3 +222,20 @@ No clear license, CC BY-NC, CC BY-ND, paywalled material without permission.
 | BioRender-generated figures | No | Hard block, even if the surrounding paper is CC BY. |
 
 <!-- end Part 3 -->
+
+---
+
+## Part 4 — Subdomains in Scope
+
+(Supplied by the user to fill the empty "Subdomains in Scope" section of Part 3.)
+
+Analysis
+Algebra
+Number Theory
+Geometry & Topology
+Discrete Mathematics & Combinatorics
+Probability & Statistics
+Logic & Set Theory
+Optimization & Numerical Mathematics
+
+<!-- end Part 4 -->
