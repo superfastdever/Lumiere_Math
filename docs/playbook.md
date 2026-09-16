@@ -565,3 +565,82 @@ Free reading access does not imply commercial reuse rights. Always verify the sp
 Preserve all axis labels, lane labels, scale bars, color legends, and MW ladder markings. These are part of the visual reasoning the task tests.
 
 <!-- end Part 8 -->
+
+---
+
+## Part 9
+
+> **NOTE ON FIDELITY:** this part arrived with inline mathematics stripped out.
+> Element names, point labels, relation lists and the quantities being asked for
+> are missing (they appear as empty gaps before punctuation). The referenced
+> images were not attached. Recorded below exactly as received; see the
+> "Known gaps" subsection at the end for the specific losses.
+
+# 🥇 Golden Examples
+
+Two complete golden example tasks for the mathematics domain, paired with their images.
+
+1
+
+## Golden Example 1: Order Theory — Hasse diagram
+
+### Image
+
+![Hasse diagram of a partially ordered set](https://project-lumiere-instructins.learn.joinhandshake.com/images/math-golden-1-hasse.png)
+
+The image represents the Hasse diagram of a partially ordered set. What is the width of the poset, namely, the maximum cardinality of its antichains?
+
+The image represents the Hasse diagram of a poset, which has distinct elements , , , , , and . The letters label the rows from bottom to top, and subscripts increase from left to right. The strict order on the poset is the transitive closure of the relations below. A set on either side of a comparison means that the comparison holds for each member of that set. In particular, and are isolated.
+
+2
+
+## Golden Example 2: Topology — curve on a surface
+
+### Image
+
+![Hourglass-shaped surface S with a closed red curve C drawn on it](https://project-lumiere-instructins.learn.joinhandshake.com/images/math-golden-2-surface.jpg)
+
+Consider the surface and the red curve on the surface given in the image attached. If is the complement of in , what is the rank of the zeroth homology group of ?
+
+The image shows a smooth, light-blue, hollow, hourglass-shaped surface , with wide circular rims at the top and bottom and a narrower waist. It consists only of the tube's lateral wall, with neither end capped; topologically, it is an annulus. A vertical axis labeled passes through its center but is not part of the surface or curve. A single closed red curve lies on , away from both rims. Solid arcs lie on the visible front, and dashed arcs lie on the hidden back; the dashes do not represent gaps. The curve has exactly two genuine transverse self-intersections: an upper solid-solid crossing on the front, denoted here by , and a lower dashed-dashed crossing on the back, denoted by . Neither crossing represents an overpass or underpass. The arrangement can be described precisely as a connected graph with vertices and four edges. One edge forms a loop based at : it rises along the front, passes around the back along the upper dashed arc, and returns to . Another forms a loop based at : it descends along the back, passes around the front along the lowest solid arc, and returns to . Each loop winds once around the tube. The remaining two edges connect to , passing around the left and right sides, respectively. All four edge interiors are mutually disjoint, and each vertex has four incident branches. There are no additional crossings or red components. The complement removes every solid and dashed red arc, including both intersection points; the surface's rims remain.
+
+## A bad example and how to fix it
+
+Bad
+
+![Unlabelled red curve through points A, B and C](https://project-lumiere-instructins.learn.joinhandshake.com/images/math-bad-example.png)
+
+Prompt: Let be the graph of the red curve in the image that passes through the points . What is ?
+
+Good
+
+![Labelled red parabola with axes and integer-coordinate points A, B and C](https://project-lumiere-instructins.learn.joinhandshake.com/images/math-good-example.png)
+
+Prompt: Let be the graph of the red parabola in the image that passes through the points . The coordinates of these points are integers. What is ?
+
+The fix: the good version names the curve type and pins the points to integer coordinates, so the answer is unique.
+
+### Known gaps in Part 9 (to be filled from the source)
+
+Golden Example 1 (Hasse diagram):
+-   Names of the seven distinct elements (stripped: "distinct elements , , , , , and").
+-   The entire list of order relations whose transitive closure defines the poset
+    ("the transitive closure of the relations below" — no relations followed).
+-   Which two elements are isolated ("In particular, and are isolated").
+-   The GTFA (the width) is not stated.
+-   The image itself was not attached.
+
+Golden Example 2 (curve on a surface):
+-   Symbols for the surface, the curve, the complement and the axis.
+-   The number of vertices ("a connected graph with vertices and four edges").
+-   Names of the two crossing points (context suggests two labels used as
+    "based at ..." throughout).
+-   The GTFA (rank of the zeroth homology group) is not stated.
+-   The image itself was not attached.
+
+Bad / good example pair:
+-   The name of the graph/curve and the point labels ("passes through the points .").
+-   The quantity being asked for ("What is ?").
+-   Both images were not attached.
+
+<!-- end Part 9 -->
